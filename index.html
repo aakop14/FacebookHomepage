@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <meta charset='UTF-8'/>
     <title>Facebook Homepage</title>
   </head>
   <body>
       <div class='page'>
         <div class='toppanel'>
-          <a href="index.html">
-            <img id="FacebookLogo" src='images/facebook_icon.png'/>
-          </a>
-          <form action=""> <!-- Search for entered info -->
-            <input id="SearchField" type="text" name="searchbar" value="Search">
-            <input id="SearchButton" type="submit" value="">
-            <img id="SearchIcon" src='images/search_icon.png'/>
-          </form>
-          <a href="profile.html">
-            <img id="ProfilePhoto" src='images/profile_icon.jpg'/>
-            <p id="ProfileName">Name Here</p>
-          </a>
-          <a href="index.html">
-                <p id="HomeLabel">Home</p>
-          </a>
-          <img id="FriendsIcon" src='images/friends_icon.png'/>
-          <img id="MessengerIcon" src='images/messenger_icon.png'/>
-          <img id="NotificationsIcon" src='images/notifications_icon.png'/>
-          <img id="QuickHelpIcon" src='images/help_icon.png'/>
-          <img id="TriangleIcon" src='images/triangle_icon.png'/>
+          <div class="fb-icon">
+              <a href="index.html" >
+                <img id="FacebookLogo" class="icons" src='images/facebook_icon.png'/>
+              </a>
+          </div>                
+          <div class="search-bar">
+            <form action="" style="margin-top: 10px"> 
+              <input id="SearchField" type="text" name="searchbar" value="Search" class="search-input">
+              <button type="submit" id="SearchButton" style="float:left;">
+                 <img id="SearchIcon" src='images/search_icon.svg'/>  
+              </button>
+            </form>
+          </div>
+          <div class="social">
+            <a href="profile.html" style="margin-bottom: 5px; float: left;">
+              <img id="ProfilePhoto" class="icons" class="profile-picture" src='images/profile_icon.jpg'/>
+              <p id="ProfileName" class="profile-name">John Doe</p>
+            </a>
+            <a href="index.html" id="HomeLabel">
+              Home
+            </a>
+                
+            <img id="FriendsIcon" class="social-icons" src='images/friends_icon.png'/>
+            <img id="MessengerIcon" class="social-icons" src='images/messenger_icon.png'/>
+            <img id="NotificationsIcon" class="social-icons" src='images/notifications_icon.png'/>
+            <img id="QuickHelpIcon" class="social-icons" src='images/help_icon.png'/>
+            <img id="TriangleIcon" class="social-icons" src='images/triangle_icon.png'/>
+          </div>
         </div>
         <div class='sidemenu'>
           <div class='profile'>
