@@ -13,18 +13,22 @@
         <div class='top-panel-wrapper__content'>
           <div class='top-panel-wrapper__content-logo-search'>
             <div class="fb-icon">
-              <a href="index.html">
-                <img id="FacebookLogo" class="icons" src='images/facebook_icon.png' />
-              </a>
+              <div class='fb-icon-wrapper'>
+                <a href="index.html">
+                  <img id="FacebookLogo" class="icons" src='images/facebook_icon.png' />
+                </a>
+              </div>
             </div>
             <div class="search-bar">
-              <form style="margin-top: 10px">
-                <input id="SearchField" type="text" class='' name="searchbar" value="Search">
-                <button type="submit" id="SearchButton" style="float:left;">
-                  <img id="SearchIcon" src='images/search_icon.svg' />
+              <div class='search-bar-wrapper'>
+              <form>
+                <input id="SearchField" type="text" class='search-bar__input' name="searchbar" value="Search">
+                <button type="submit" id="SearchButton" class='search-bar__button'>
+                  <img id="SearchIcon" src='images/search_icon.png' />
                 </button>
               </form>
             </div>
+          </div>
           </div>
           <div class="social">
             <div class='block-data'>
