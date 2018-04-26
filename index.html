@@ -1,211 +1,264 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <meta charset='UTF-8'/>
-    <title>Facebook Homepage</title>
-  </head>
-  <body>
-      <div class='page'>
-        <div class='toppanel'>
-          <div class="fb-icon">
-              <a href="index.html" >
-                <img id="FacebookLogo" class="icons" src='images/facebook_icon.png'/>
-              </a>
-          </div>                
-          <div class="search-bar">
-            <form action="" style="margin-top: 10px"> 
-              <input id="SearchField" type="text" name="searchbar" value="Search">
-              <button type="submit" id="SearchButton" style="float:left;">
-                 <img id="SearchIcon"  src='images/search_icon.svg'/>  
-              </button>
-            </form>
-          </div>
-          <div class="social">
-            <div class='blockdata'>
-                <a href="profile.html" style="float: left;">
-                  <span class='profile'>
-                    <img id="ProfilePhoto" class="profile-picture" src='images/profile_icon.jpg'/>
-                    <p id="ProfileName" class="toppanellabels">Mark</p>
-                  </span>
-                </a>
-                <a href="index.html" class="toppanellabels">
-                  Home
-                </a>
-            </div>
-            <div id='ProfileConnections' class='blockdata'>
-              <img id="FriendsIcon" class="social-icons" src='images/friends_icon.png'/>
-              <img id="MessengerIcon" class="social-icons" src='images/messenger_icon.png'/>
-              <img id="NotificationsIcon" class="social-icons" src='images/notifications_icon.png'/>
-            </div>
-            <div id='AdditionalInfo' class='blockdata'>
-              <img id="QuickHelpIcon" class="social-icons" src='images/help_icon.png'/>
-              <img id="TriangleIcon" class="social-icons" src='images/triangle_icon.png'/>
-            </div>
-          </div>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <meta charset='UTF-8' />
+  <title>Facebook Homepage</title>
+</head>
+<body>
+  <div class='page'>
+    <div class='top-panel'>
+      <div class="fb-icon">
+        <a href="index.html">
+          <img id="FacebookLogo" class="icons" src='images/facebook_icon.png' />
+        </a>
+      </div>
+      <div class="search-bar">
+        <form style="margin-top: 10px">
+          <input id="SearchField" type="text" class='' name="searchbar" value="Search">
+          <button type="submit" id="SearchButton" style="float:left;">
+            <img id="SearchIcon" src='images/search_icon.svg' />
+          </button>
+        </form>
+      </div>
+      <div class="social">
+        <div class='block-data'>
+          <a href="profile.html" style="float: left;">
+            <span class='profile'>
+              <img id="ProfilePhoto" class="profile-picture top-panel__profile-picture" src='images/profile_icon.jpg' />
+              <p id="ProfileName" class="top-panel__labels">Mark</p>
+            </span>
+          </a>
+          <a href="index.html" class="top-panel__labels">
+            Home
+          </a>
         </div>
-        <div class='sidemenu'>
-          <div >
-              <a href="profile.html">
-                <span class='profile'>
-                  <img id="MenuProfilePhoto" class="profile-picture" src='images/profile_icon.jpg'/>
-                  <p id="ProfileFullName">Mark Zuckerberg</p>
-                </span>
-              </a>
-              <div class='NewsFeed'>
-                <a href="index.html">
-                  <img id="NewsFeedPhoto" src='images/news_feed_icon.png'/>
-                  <p id="NewsFeedTitle">News Feed</p>
-                </a>
-              </div>
-          </div>
-          <div class='groups'>
-            <h4>Shortcuts</h4>
-            <a href="group1.html">
-              <img id="FirstGroupImg" src='images/first_group_icon.png'/>
-              <p id="FirstGroupName">First Group</p>
-            </a>
-            <a href="group2.html">
-              <img id="SecondGroupImg" src='images/second_group_icon.png'/>
-              <p id="SecondGroupName">Second Group</p>
-            </a>
-            <a href="group3.html">
-              <img id="ThirdGroupImg" src='images/third_group_icon.png'/>
-              <p id="ThirdGroupName">Third Group</p>
-            </a>
-            <a href="group4.html">
-              <img id="FourthGroupImg" src='images/fourth_group_icon.png'/>
-              <p id="FourthGroupName">Fourth Group</p>
-            </a>
-          </div>
-          <div class='explore'>
-            <h4>Explore</h4>
-            <a href="events.html">
-              <img id="EventsImg" src='images/events_icon.png'/>
-              <p id="EventsTitle">Events</p>
-            </a>
-            <a href="groups.html">
-              <img id="GroupsImg" src='images/groups_icon.png'/>
-              <p id="GroupsTitle">Groups</p>
-            </a>
-            <a href="pages.html">
-              <img id="PagesImg" src='images/pages_icon.png'/>
-              <p id="PagesTitle">Pages</p>
-            </a>
-            <a href="onthisday.html">
-              <img id="OnThisDayImg" src='images/on_this_day_icon.png'/>
-              <p id="OnThisDayTitle">On This Day</p>
-            </a>
-            <a href="friendslists.html">
-              <img id="FriendsListsImg" src='images/friends_list_icon.png'/>
-              <p id="FriendsListsTitle">Friends Lists</p>
-            </a>
-            <a href="pagesfeed.html">
-              <img id="PagesFeedImg" src='images/pages_feed_icon.png'/>
-              <p id="PagesFeedTitle">Pages Feed</p>
-            </a>
-            <a href="photos.html">
-              <img id="PhotosImg" src='images/photos_icon.png'/>
-              <p id="PhotosTitle">Photos</p>
-            </a>
-            <a href="games.html">
-              <img id="GamesImg" src='images/games_icon.png'/>
-              <p id="GamesTitle">Games</p>
-            </a>
-            <a href="livevideo.html">
-              <img id="LiveVideoImg" src='images/live_video_icon.png'/>
-              <p id="LiveVideoTitle">Live Video</p>
-            </a>
-            <a href="suggestedits.html">
-              <img id="SuggestEditsImg" src='images/suggest_edits_icon.png'/>
-              <p id="SuggestEditsTitle">Suggest Edits</p>
-            </a>
-            <a href="offers.html">
-              <img id="OffersImg" src='images/offers_icon.png'/>
-              <p id="OffersTitle">Offers</p>
-            </a>
-            <a href="">
-              <img id="SeeMoreImg" src='images/triangle_menu_icon.png'/>
-              <p id="SeeMoreTitle">See More</p>
-            </a>
-          </div>
-          <div class='create'>
-            <h4>Create</h4>
-            <a href="createad.html">
-              <img id="CreateAdImg" src=''/>
-              <p id="CreateAdTitle">Ad</p>
-            </a>
-            <a href="createpage.html">
-              <img id="CreatePageImg" src=''/>
-              <p id="CreatePageTitle">Page</p>
-            </a>
-            <a href="creategroup.html">
-              <img id="CreateGroupImg" src=''/>
-              <p id="CreateGroupTitle">Group</p>
-            </a>
-            <a href="createevent.html">
-              <img id="CreateEventImg" src=''/>
-              <p id="CreateEventTitle">Event</p>
-            </a>
-          </div>
+        <div id='ProfileConnections' class='block-data'>
+          <img id="FriendsIcon" class="social-icons" src='images/friends_icon.png' />
+          <img id="MessengerIcon" class="social-icons" src='images/messenger_icon.png' />
+          <img id="NotificationsIcon" class="social-icons" src='images/notifications_icon.png' />
         </div>
-        <div class='main'>
-          <div id='PostComposer'>
-            <div id='ComposerBar'>
-              <span class='composertypes'>
-                <img id='MakePostImg' src=''/>
-                <span id='MakePostTitle'>Make Post</span>
-              </span>
-              <span class='composertypes'>
-                <img id='PhotoVideoPostImg' src=''/>
-                <span id='PhotoVideoPostTitle'>Photo/Video Album</span>
-              </span>
-              <span class='composertypes'>
-                <img id='LiveVideoPostImg' src=''/>
-                <span id='LiveVideoPostTitle'>Live Video</span>
-              </span>
-            </div>
-            <div id='ComposerBody'>
-              <div id='ComposerBodyTop'>
-                <div id='ComposerProfilePicture' >
-                  <a href="profile.html">
-                    <img src="images/profile_icon.jpg" alt="profile_icon">
-                  </a>
-                </div>
-                <div id='ComposerInput'>
-                  <div id='ComposerInputInitText'>What's on your mind?
-                  </div>
-                  <div>
-                  </div>
-                </div>
-              </div>
-              <div id='ComposerBodyBottom'>
-                <div class='composerbottomtypes'>
-                  <span id='ChoosePhotoVideo'>
-                    <img id='ChoosePhotoVideoImg' src=''/>
-                    <span id='ChoosePhotoVideoTitle'>Photo/Video</span>
-                  </span>
-                  <input id="ChoosePhotoVideoButton" role="button" type="file" accept="video/*,  image/*">
-                </div>
-                <div class='composerbottomtypes'>
-                  <span id='ChooseFeelingActivity'>
-                    <img id='ChooseFeelingActivityImg' src=''/>
-                    <span id='ChooseFeelingActivityTitle'>Feeling/Activity</span>
-                  </span>
-                </div>
-                <div class='composerbottomtypes'>
-                  <span id='ChooseElse'>
-                    <img id='ChooseElseImg' src=''/>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='ads'>
-        </div>
-        <div class='friends'>
+        <div id='AdditionalInfo' class='block-data'>
+          <img id="QuickHelpIcon" class="social-icons" src='images/help_icon.png' />
+          <img id="TriangleIcon" class="social-icons" src='images/triangle_icon.png' />
         </div>
       </div>
-  </body>
+    </div>
+    <div class="page-wrapper">
+      <div class="page-main">
+        <div class="page-holder">
+          <div class='side-menu'>
+            <div class='side-menu-wrapper'>
+              <div>
+                <a href="profile.html">
+                  <span class='profile'>
+                    <img id="MenuProfilePhoto" class="profile-picture side-menu__profile-picture" src='images/profile_icon.jpg' />
+                    <p id="ProfileFullName" class="side-menu__profile-name">Mark Zuckerberg</p>
+                  </span>
+                </a>
+              </div>
+              <div>
+                <div class='news-feed'>
+                  <a href="index.html">
+                    <span class='side-menu__image-text-bundle'>
+                      <img id="NewsFeedImg" src='images/news_feed_icon.png' />
+                      <p id="NewsFeedTitle">News Feed</p>
+                    </span>
+                  </a>
+                </div>
+                <div class='side-menu__messenger'>
+                  <a href="messenger.html">
+                    <span class='side-menu__image-text-bundle'>
+                      <img id="SideMenuMessengerImg" src='images/messenger_coloured_icon.png' />
+                      <p id="SideMenuMessengerTitle">Messenger</p>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class='groups'>
+                <h4>Shortcuts</h4>
+                <a href="group1.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="FirstGroupImg" src='images/first_group_icon.png' />
+                    <p id="FirstGroupName">First Group</p>
+                  </span>
+                </a>
+                <a href="group2.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="SecondGroupImg" src='images/second_group_icon.png' />
+                    <p id="SecondGroupName">Second Group</p>
+                  </span>
+                </a>
+                <a href="group3.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="ThirdGroupImg" src='images/third_group_icon.png' />
+                    <p id="ThirdGroupName">Third Group</p>
+                  </span>
+                </a>
+                <a href="group4.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="FourthGroupImg" src='images/fourth_group_icon.png' />
+                    <p id="FourthGroupName">Fourth Group</p>
+                  </span>
+                </a>
+              </div>
+              <div class='explore'>
+                <h4>Explore</h4>
+                <a href="events.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="EventsImg" src='images/events_icon.png' />
+                    <p id="EventsTitle">Events</p>
+                  </span>
+                </a>
+                <a href="groups.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="GroupsImg" src='images/groups_icon.png' />
+                    <p id="GroupsTitle">Groups</p>
+                  </span>
+                </a>
+                <a href="pages.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="PagesImg" src='images/pages_icon.png' />
+                    <p id="PagesTitle">Pages</p>
+                  </span>
+                </a>
+                <a href="onthisday.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="OnThisDayImg" src='images/on_this_day_icon.png' />
+                    <p id="OnThisDayTitle">On This Day</p>
+                  </span>
+                </a>
+                <a href="friendslists.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="FriendsListsImg" src='images/friends_list_icon.png' />
+                    <p id="FriendsListsTitle">Friends Lists</p>
+                  </span>
+                </a>
+                <a href="pagesfeed.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="PagesFeedImg" src='images/pages_feed_icon.png' />
+                    <p id="PagesFeedTitle">Pages Feed</p>
+                  </span>
+                </a>
+                <a href="photos.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="PhotosImg" src='images/photos_icon.png' />
+                    <p id="PhotosTitle">Photos</p>
+                  </span>
+                </a>
+                <a href="games.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="GamesImg" src='images/games_icon.png' />
+                    <p id="GamesTitle">Games</p>
+                  </span>
+                </a>
+                <a href="livevideo.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="LiveVideoImg" src='images/live_video_icon.png' />
+                    <p id="LiveVideoTitle">Live Video</p>
+                  </span>
+                </a>
+                <a href="suggestedits.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="SuggestEditsImg" src='images/suggest_edits_icon.png' />
+                    <p id="SuggestEditsTitle">Suggest Edits</p>
+                  </span>
+                </a>
+                <a href="offers.html">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="OffersImg" src='images/offers_icon.png' />
+                    <p id="OffersTitle">Offers</p>
+                  </span>
+                </a>
+                <a href="">
+                  <span class='side-menu__image-text-bundle'>
+                    <img id="SeeMoreImg" src='images/triangle_menu_icon.png' />
+                    <p id="SeeMoreTitle">See More</p>
+                  </span>
+                </a>
+              </div>
+              <div class='create'>
+                <h4>Create</h4>
+                <span>
+                  <a href="createad.html">Ad</a>
+                </span>
+                <span>
+                  <a href="createpage.html">Page</a>
+                </span>
+                <span>
+                  <a href="creategroup.html">Group</a>
+                </span>
+                <span>
+                  <a href="createevent.html">Event</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="scrollable-content">
+            <div class='timeline'>
+              <div id='PostComposer'>
+                <div id='ComposerBar'>
+                  <span class='composertypes'>
+                    <img id='MakePostImg' src='' />
+                    <span id='MakePostTitle'>Make Post</span>
+                  </span>
+                  <span class='composertypes'>
+                    <img id='PhotoVideoPostImg' src='' />
+                    <span id='PhotoVideoPostTitle'>Photo/Video Album</span>
+                  </span>
+                  <span class='composertypes'>
+                    <img id='LiveVideoPostImg' src='' />
+                    <span id='LiveVideoPostTitle'>Live Video</span>
+                  </span>
+                </div>
+                <div id='ComposerBody'>
+                  <div id='ComposerBodyTop'>
+                    <div id='ComposerProfilePicture'>
+                      <a href="profile.html">
+                        <img src="images/profile_icon.jpg" alt="profile_icon">
+                      </a>
+                    </div>
+                    <div id='ComposerInput'>
+                      <div id='ComposerInputInitText'>
+                        What's on your mind?
+                      </div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id='ComposerBodyBottom'>
+                    <div class='composerbottomtypes'>
+                      <span id='ChoosePhotoVideo'>
+                        <img id='ChoosePhotoVideoImg' src='' />
+                        <span id='ChoosePhotoVideoTitle'>Photo/Video</span>
+                      </span>
+                      <input id="ChoosePhotoVideoButton" role="button" type="file" accept="video/*,  image/*">
+                    </div>
+                    <div class='composerbottomtypes'>
+                      <span id='ChooseFeelingActivity'>
+                        <img id='ChooseFeelingActivityImg' src='' />
+                        <span id='ChooseFeelingActivityTitle'>Feeling/Activity</span>
+                      </span>
+                    </div>
+                    <div class='composerbottomtypes'>
+                      <span id='ChooseElse'>
+                        <img id='ChooseElseImg' src='' />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="commercials">
+              <div class="commercials-wrapper">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='page-chat'>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

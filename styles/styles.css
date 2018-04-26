@@ -1,17 +1,24 @@
-body{
+html, body{
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
+	left:0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	background-color: #dee3ea;
 	color: black;
-	overflow-y: scroll;
+	overflow-y: scroll;	
 }
 
-.toppanel{
+.top-panel{
 	float: left;
 	height: 42px;
 	width: 100%;
 	background-color: #4267b2;
 	position: fixed;
+	z-index: 10;
 }
 
 .fb-icon{
@@ -31,7 +38,6 @@ body{
 	border-radius: 3px
 }
 
-
 .social{
 	display: inline;
 	margin-left: 10%;
@@ -43,6 +49,11 @@ body{
 	float: left;
 	border-radius: 50%;	
 	display: inline;
+}
+
+.top-panel__profile-picture{
+	width: 24px;
+	height: 24px;
 }
 
 .social-icons{
@@ -61,7 +72,7 @@ body{
 	color: white;
 }
 
-.toppanellabels{
+.top-panel__labels{
 	float: left; 
 	color: white;
   display: inline-block;
@@ -78,13 +89,129 @@ body{
   display: inline-block;
 }
 
-.blockdata{
+.block-data{
 	float: left;
 	display: inline-block;
 }
 
-.sidemenu{
-	width:650px;
+.side-menu{
+	position: relative;
+	width: 180px;
+	display: block;
+}
+
+.side-menu-wrapper{
+	top: 43px;
+	width:180px;
+	padding-top: 12px;
+	position: fixed;
+	background: #ccc;
+	float: left;
+}
+
+.side-menu__profile{
+	height: 28px;
+}
+
+.side-menu-wrapper img{
+	float: left;
+	display: inline;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.side-menu-wrapper p{
+	display: table-cell;
+	text-align: center;	
+	vertical-align: middle;
+	margin: 0;
+	padding-left: 5px;
+	line-height: 28px;	
+	font-size: 13px;
+}
+
+.side-menu-wrapper a{
+	color: black;
+	font-size: 13px;
+}
+
+.side-menu-wrapper h4{
+	margin: 0;
+	line-height: 17px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #626673;
+}
+
+.side-menu__profile-picture{
+	width: 20px;
+	height: 20px;
+}
+
+.side-menu__image-text-bundle{
+	width: 100%;
+  display: inline-block;
+}
+
+.main-content{
+	border-left: 0;
+}
+
+.page-chat{
+	top: 43px;
+	height: 100%;
+	width: 206px;
+	background: red;
+	display: block;
+	position: fixed !important;
+	right: 0;
+}
+
+.page-wrapper{
+	padding-top: 43px;
+	height: 100%;
+}
+
+.page-main{
+	height: 100%;
+	margin: 0 auto;
+	padding-right: 206px;
+	width: 1008px !important;
+	background: blue;
+	display: block;
+}
+
+.page-holder{
+	display: block;
+	position: relative;
+}
+
+.scrollable-content{
+	position: absolute;
+	left: 180px;
+	top: 0;	
+	width: 828px;
+}
+
+.commercials{
+	width: 308px;
+	float: left;
+	display: block;	
+}
+
+.commercials-wrapper{
+	position: fixed;
+	width: 308px;
+	height: 600px;
+	background: #234;
+}
+
+.timeline{
+	width: 500px;
+	background: #333;
+	height: 3000px;
+	float: left;
+	margin: 0 10px;
 }
 
 #ProfileConnections{
@@ -122,12 +249,18 @@ body{
 	width: 16px
 }
 
-#ProfilePhoto{
-	height: 24px;
-	width: 24px;
-}
-
 #ProfileName{
 	border: 0;
 	margin-top: 0;
+}
+
+
+@media screen and (max-width: 1238px){
+	.page-chat{
+		display: none;
+	}
+	.page-main{
+		width: 100%;
+		padding-right: 0;
+	}
 }
