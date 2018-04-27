@@ -207,8 +207,8 @@
           </div>
           <div class="scrollable-content">
             <div class='timeline'>
-              <div id='PostComposer'>
-                <div id='ComposerBar'>
+              <div id='PostComposer' class='post-composer'>
+                <div id='ComposerBar'class='post-composer__top-bar'>
                   <span class='composertypes'>
                     <img id='MakePostImg' src='' />
                     <span id='MakePostTitle'>Make Post</span>
@@ -222,39 +222,44 @@
                     <span id='LiveVideoPostTitle'>Live Video</span>
                   </span>
                 </div>
-                <div id='ComposerBody'>
-                  <div id='ComposerBodyTop'>
-                    <div id='ComposerProfilePicture'>
+                <div id='ComposerBody' class='post-composer__body'>
+                  <div id='ComposerBodyTop' class='post-composer__body-top'>
+                    <div id='ComposerProfilePicture' class='post-composer__body_profile-picture-holder'>
                       <a href="profile.html">
-                        <img src="images/profile_icon.jpg" alt="profile_icon">
+                        <img src="images/profile_icon.jpg" class='profile-picture post-composer__body_profile-picture' alt="profile_icon">
                       </a>
                     </div>
-                    <div id='ComposerInput'>
-                      <div id='ComposerInputInitText'>
+                    <div id='ComposerInput' class='post-composer__body-top__input'>
+                      <div id='ComposerInputInitText' class='post-composer__body-top__input-wrapper'>
                         What's on your mind?
                       </div>
                       <div>
                       </div>
                     </div>
                   </div>
-                  <div id='ComposerBodyBottom'>
-                    <div class='composerbottomtypes'>
-                      <span id='ChoosePhotoVideo'>
-                        <img id='ChoosePhotoVideoImg' src='' />
-                        <span id='ChoosePhotoVideoTitle'>Photo/Video</span>
-                      </span>
-                      <input id="ChoosePhotoVideoButton" role="button" type="file" accept="video/*,  image/*">
-                    </div>
-                    <div class='composerbottomtypes'>
-                      <span id='ChooseFeelingActivity'>
-                        <img id='ChooseFeelingActivityImg' src='' />
-                        <span id='ChooseFeelingActivityTitle'>Feeling/Activity</span>
-                      </span>
-                    </div>
-                    <div class='composerbottomtypes'>
-                      <span id='ChooseElse'>
-                        <img id='ChooseElseImg' src='' />
-                      </span>
+                  <div id='ComposerBodyBottom' class='post-composer__body-bottom'>
+                    <div class='post-composer__body-bottom-wrapper'>
+                      <div class='post-composer__body-bottom_photos-input'> 
+                        <div class='post-composer__body-bottom_elem'>
+                          <button id="ChoosePhotoVideoButton" class='post-composer__body-bottom_button' type="file" accept="video/*,  image/*"></button>
+                            <span id='ChoosePhotoVideo'>
+                              <img id='ChoosePhotoVideoImg' class='post-composer__body-bottom_button-img' src='images/image_icon.png' />
+                              <span id='ChoosePhotoVideoTitle'>Photo/Video</span>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class='composerbottomtypes'>
+                        <span id='ChooseFeelingActivity'>
+                          <img id='ChooseFeelingActivityImg' src='' />
+                          <span id='ChooseFeelingActivityTitle'>Feeling/Activity</span>
+                        </span>
+                      </div>
+                      <div class='composerbottomtypes'>
+                        <span id='ChooseElse'>
+                          <img id='ChooseElseImg' src='' />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -7,14 +7,15 @@ html, body{
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #dee3ea;
 	color: black;
+	font-family: Helvetica, Arial, sans-serif;	
 }
 
 .page{
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	background-color: #e9ebee;
 }
 
 .top-panel{
@@ -128,8 +129,9 @@ html, body{
 
 .profile-picture{
 	float: left;
+	display: block;
+	position: relative;
 	border-radius: 50%;	
-	display: inline;
 }
 
 .top-panel__profile-picture{
@@ -257,13 +259,13 @@ html, body{
 	height: 100%;
 	margin: 0 auto;
 	width: 1008px !important;
-	background: blue;
 	display: block;
 }
 
 .page-holder{
 	display: block;
 	position: relative;
+	margin-top: 12px;
 }
 
 .scrollable-content{
@@ -287,33 +289,138 @@ html, body{
 
 .timeline{
 	width: 500px;
-	background: #333;
 	height: 3000px;
 	float: left;
 	margin: 0 10px;
 }
 
-#ProfileConnections{
-	margin-left: 15px;
+.post-composer{
+	position: relative;
+	display: block;
+	width: 500px;
+	height: 155px;
+	border: 1px solid #dddfe2;
+	border-radius: 4px;
+	top: 0;
+	margin-bottom: 10px;
 }
 
-#AdditionalInfo{
-	margin-left: 20px;
+.post-composer__top-bar{
+	display: block;
+	position: relative;
+	padding: 8px 0;
+	width: 100%;
+	height: 16px;
+	border-radius: 2px 2px 0 0;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #f6f7f9;
+	border-bottom: 1px solid #dddfe2;
 }
 
-#SearchIcon{
-	height: 16px; 
-	width: 16px
+.post-composer__body{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: calc( 155px - 33px );
+	margin: 0;
+	padding: 0;
+	border-radius: 0 0 3px 3px;
+	background-color: white; 
 }
 
-#ProfileName{
-	border: 0;
-	margin-top: 0;
+.post-composer__body-top{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 72px;
+	margin: 0;
+	padding: 0;
+}
+
+.post-composer__body_profile-picture-holder{
+	float: left;
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 12px 0 0 12px;	
+}
+
+.post-composer__body_profile-picture{
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .fix-commercials-wrapper{
 	position: fixed;
 	top: calc( 100% - 1200px );
+}
+
+.post-composer__body-top__input{
+	float: left;
+	display: block;
+	position: relative;
+	height: 100%;
+	width: calc( 500px - 40px - 12px );
+	right: 0;
+}
+
+.post-composer__body-top__input-wrapper{
+	font-size: 14px;
+	height: calc( 72px - 23px - 12px);
+	line-height: 18px;
+	padding: 23px 12px 12px 12px;
+	color: #afb2b8;
+	cursor: text;
+}
+
+.post-composer__body-bottom{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: calc( 155px - 33px - 72px );
+}
+
+.post-composer__body-bottom-wrapper{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 8px 0;
+	height: calc( 155px - 33px - 72px - 8px - 8px);
+	width: calc( 500px - 12px - 12px );
+}
+
+.post-composer__body-bottom_elem{
+	display: block;
+	position: relative;
+}
+
+.post-composer__body-bottom_button{
+	position: relative;
+	display: block;
+	height: 34px;
+	width: 100%;
+	border-radius: 18px;
+	border: none;
+	cursor: pointer;
+	top: 0;
+	bottom: 0;
+	background: #f6f7f9;
+}
+
+.post-composer__body-bottom_photos-input{
+	display: block;
+	position: relative;
+	height: 34px;
+	width: 120px;
+}
+
+.post-composer__body-bottom_button-img{
+
 }
 
 @media screen and (max-width: 1238px){
