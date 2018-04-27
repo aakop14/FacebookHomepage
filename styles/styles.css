@@ -36,6 +36,7 @@ html, body{
 	margin: 0 auto;
 	height: 42px;
 	width: 1008px;
+	position: relative;
 }
 
 .top-panel-wrapper__content-logo-search{
@@ -118,12 +119,11 @@ html, body{
 }
 
 .social{
-	float: right;
-	position: relative;
+	position: absolute;
 	display: block;
 	width: 308px;
 	height: 42px;
-	top: 0;
+	top: 0px;
 	right: 0;
 }
 
@@ -392,15 +392,51 @@ html, body{
 	padding: 8px 0;
 	height: calc( 155px - 33px - 72px - 8px - 8px);
 	width: calc( 500px - 12px - 12px );
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.post-composer__body-bottom_photos-input{
+	display: inline-block;
+	position: relative;
+	height: 34px;
+	width: 120px;
+	margin-right: 6px;
+}
+
+.post-composer__body-bottom_feelings-input{
+	display: inline-block;
+	position: relative;
+	height: 34px;
+	width: 140px;
+	margin-right: 6px;
+}
+
+.post-composer__body-bottom_else-input{
+	display: inline-block;
+	position: relative;
+	height: 34px;
+	width: 44px;
+	margin-right: 6px;
 }
 
 .post-composer__body-bottom_elem{
 	display: block;
 	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.post-composer__body-bottom_button-content{
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: calc( 100% - 6px - 6px - 10px );
+	top: 0;
+	left: 10px;
 }
 
 .post-composer__body-bottom_button{
-	position: relative;
+	position: absolute;
 	display: block;
 	height: 34px;
 	width: 100%;
@@ -412,15 +448,25 @@ html, body{
 	background: #f6f7f9;
 }
 
-.post-composer__body-bottom_photos-input{
-	display: block;
-	position: relative;
-	height: 34px;
-	width: 120px;
-}
-
 .post-composer__body-bottom_button-img{
-
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	top: calc( (34px - 20px) / 2 - 1px );
+}
+.post-composer__body-bottom_button-text{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	box-sizing: border-box;
+    color: #4b4f56;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+	font-size: 12px; 
 }
 
 @media screen and (max-width: 1238px){
