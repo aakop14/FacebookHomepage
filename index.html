@@ -31,25 +31,35 @@
           </div>
           </div>
           <div class="social">
-            <div class='block-data'>
-              <a href="profile.html" style="float: left;">
-                <span class='profile'>
-                  <img id="ProfilePhoto" class="profile-picture top-panel__profile-picture" src='images/profile_icon.jpg' />
-                  <p id="ProfileName" class="top-panel__labels">Mark</p>
-                </span>
-              </a>
-              <a href="index.html" class="top-panel__labels">
-                Home
-              </a>
+            <div class='social__profile-navigation block-data'>
+              <div class='social__profile-navigation_profile-name'>
+                <a href="profile.html" class='social__profile-navigation_profile-name-wrapper'>
+                  <span class='profile social__profile-navigation_profile-name-info'>
+                    <img id="ProfilePhoto" class="profile-picture top-panel__profile-picture" src='images/profile_icon.jpg' />
+                    <p id="ProfileName" class="top-panel__labels">Mark</p>
+                  </span>
+                </a>
+              </div>
+              <div class='social__profile-navigation_home-label'>
+                <div class='social__profile-navigation_home-label-wrapper'>
+                  <a href="index.html" class="top-panel__labels">
+                    Home
+                  </a>
+                </div>
+              </div>
             </div>
-            <div id='ProfileConnections' class='block-data'>
-              <img id="FriendsIcon" class="social-icons" src='images/friends_icon.png' />
-              <img id="MessengerIcon" class="social-icons" src='images/messenger_icon.png' />
-              <img id="NotificationsIcon" class="social-icons" src='images/notifications_icon.png' />
+            <div id='ProfileConnections' class='social__profile-connections block-data'>
+              <div class='social__profile-connections-wrapper' >
+                <img id="FriendsIcon" class="social-icons" src='images/friends_icon.png' />
+                <img id="MessengerIcon" class="social-icons" src='images/messenger_icon.png' />
+                <img id="NotificationsIcon" class="social-icons" src='images/notifications_icon.png' />
+              </div>
             </div>
-            <div id='AdditionalInfo' class='block-data'>
-              <img id="QuickHelpIcon" class="social-icons" src='images/help_icon.png' />
-              <img id="TriangleIcon" class="social-icons" src='images/triangle_icon.png' />
+            <div id='AdditionalInfo' class='social__profile-quick-help block-data'>
+              <div class='social__profile-quick-help-wrapper'>
+                <img id="QuickHelpIcon" class="social-icons" src='images/help_icon.png' />
+                <img id="TriangleIcon" class="social-icons social-icons__tirangle" src='images/triangle_icon.png' />
+              </div>
             </div>
           </div>
         </div>

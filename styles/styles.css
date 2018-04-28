@@ -137,10 +137,12 @@ html, body{
 .top-panel__profile-picture{
 	width: 24px;
 	height: 24px;
+	margin-top: 1px;
 }
 
 .social-icons{
 	float: left;
+	margin-top: 1px;
 	border-radius: 3px;
 	padding-left: 6px;
 	padding-right: 6px;
@@ -159,12 +161,19 @@ html, body{
 	float: left; 
 	color: white;
   display: inline-block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-left: 5px; 
   font-size: 12px;
-  font-weight: bold;
-  height: 27px;
+	font-weight: bold;
+	text-align: center;		
+  height: 28px;
   line-height: 28px;
-  padding: 0 10px 1px;
-  text-decoration: none;
+	text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+	white-space: nowrap;
 }
 
 .profile{
@@ -174,7 +183,86 @@ html, body{
 
 .block-data{
 	float: left;
-	display: inline-block;
+	display: block;
+	position: relative;
+	height: 42px;
+	padding: 0 8px 0 8px;
+}
+
+.social__profile-navigation{
+	position: relative;;
+	padding-left: 0;
+	width: 120px;	
+}
+
+.social__profile-navigation_profile-name{
+	position: relative;
+	display: block;
+	float: left;
+	height: 43px;
+	width: 65px;
+	margin: 0;
+	padding: 0;
+}
+
+.social__profile-navigation_profile-name-wrapper{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 42px;
+}
+
+.social__profile-navigation_profile-name-info{
+	position: relative;
+	display: block;
+	height: 28px;
+	margin: 7px 0 7px 0;
+	border-right: 1px solid rgba(0, 0, 0, .1);	
+}
+
+.social__profile-navigation_home-label{
+	position: relative;
+	display: block;
+	float: left;
+	height: 28px;
+	width: calc( 120px - 65px );
+	margin: 7px 0 7px 0;
+}
+
+.social__profile-navigation_home-label-wrapper{
+	padding-left: 10px 		
+}
+
+.social__profile-connections{
+	position: relative;;
+	width: 100px;
+}
+
+.social__profile-connections-wrapper{
+	display: block;
+	position: relative;
+	height: 28px;
+	width: 108px;
+	margin: 7px 0 7px 0;
+	border-right: 1px solid rgba(0, 0, 0, .1);		
+}
+
+.social__profile-quick-help{
+	position: relative;;
+	width: calc( 308px - 120px - 8px - 100px - 8px - 8px - 8px );
+	padding-right: 0;
+}
+
+.social__profile-quick-help-wrapper{
+	display: block;
+	position: relative;
+	height: 28px;
+	width: 100%;
+	margin: 7px 0 7px 0;
+}
+
+.social-icons__tirangle{
+	padding-right: 0;
 }
 
 .side-menu{
@@ -460,12 +548,12 @@ html, body{
 	height: 34px;
 	line-height: 34px;
 	box-sizing: border-box;
-    color: #4b4f56;
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-    white-space: nowrap;
+  color: #4b4f56;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
 	font-size: 12px; 
 }
 
