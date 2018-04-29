@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <meta charset='UTF-8' />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Facebook Homepage</title>
 </head>
 <body onscroll="fixBlock()">
@@ -21,14 +21,14 @@
             </div>
             <div class="search-bar">
               <div class='search-bar-wrapper'>
-              <form>
-                <input id="SearchField" type="text" class='search-bar__input' name="searchbar" value="Search">
-                <button type="submit" id="SearchButton" class='search-bar__button'>
-                  <img id="SearchIcon" src='images/search_icon.png' />
-                </button>
-              </form>
+                <form>
+                  <input id="SearchField" type="text" class='search-bar__input' name="searchbar" value="Search">
+                  <button type="submit" id="SearchButton" class='search-bar__button'>
+                    <img id="SearchIcon" src='images/search_icon.png' />
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
           </div>
           <div class="social">
             <div class='social__profile-navigation block-data'>
@@ -49,7 +49,7 @@
               </div>
             </div>
             <div id='ProfileConnections' class='social__profile-connections block-data'>
-              <div class='social__profile-connections-wrapper' >
+              <div class='social__profile-connections-wrapper'>
                 <img id="FriendsIcon" class="social-icons" src='images/friends_icon.png' />
                 <img id="MessengerIcon" class="social-icons" src='images/messenger_icon.png' />
                 <img id="NotificationsIcon" class="social-icons" src='images/notifications_icon.png' />
@@ -218,7 +218,7 @@
           <div class="scrollable-content">
             <div class='timeline'>
               <div id='PostComposer' class='post-composer'>
-                <div id='ComposerBar'class='post-composer__top-bar'>
+                <div id='ComposerBar' class='post-composer__top-bar'>
                   <span class='composertypes'>
                     <img id='MakePostImg' src='' />
                     <span id='MakePostTitle'>Make Post</span>
@@ -249,12 +249,12 @@
                   </div>
                   <div id='ComposerBodyBottom' class='post-composer__body-bottom'>
                     <div class='post-composer__body-bottom-wrapper'>
-                      <div class='post-composer__body-bottom_photos-input'> 
+                      <div class='post-composer__body-bottom_photos-input'>
                         <div class='post-composer__body-bottom_elem'>
                           <button id="ChoosePhotoVideoButton" class='post-composer__body-bottom_button' type="file" accept="video/*,  image/*">
                             <span id='ChoosePhotoVideo' class='post-composer__body-bottom_button-content'>
                               <img id='ChoosePhotoVideoImg' class='post-composer__body-bottom_button-img' src='images/image_icon.png' />
-                              <span id='ChoosePhotoVideoTitle' class='post-composer__body-bottom_button-text' >Photo/Video</span>
+                              <span id='ChoosePhotoVideoTitle' class='post-composer__body-bottom_button-text'>Photo/Video</span>
                             </span>
                           </button>
                         </div>
@@ -264,23 +264,621 @@
                           <button id="ChooseFeelingActivityButton" class='post-composer__body-bottom_button'>
                             <span id='ChooseFeelingActivity' class='post-composer__body-bottom_button-content'>
                               <img id='ChooseFeelingActivityImg' class='post-composer__body-bottom_button-img' src='images/feeling_icon.png' />
-                              <span id='ChooseFeelingActivityTitle' class='post-composer__body-bottom_button-text' >Feeling/Activity</span>
+                              <span id='ChooseFeelingActivityTitle' class='post-composer__body-bottom_button-text'>Feeling/Activity</span>
                             </span>
                           </button>
                         </div>
                       </div>
                       <div class='post-composer__body-bottom_else-input'>
                         <div class='post-composer__body-bottom_elem'>
-                            <button id="ChooseElseButton" class='post-composer__body-bottom_button'>
-                              <span id='ChooseElse' class='post-composer__body-bottom_button-content'>
-                                <img id='ChooseElseImg' class='post-composer__body-bottom_button-img' src='images/dots_icon.png' />
-                              </span>
-                            </button>
-                          </div>
+                          <button id="ChooseElseButton" class='post-composer__body-bottom_button'>
+                            <span id='ChooseElse' class='post-composer__body-bottom_button-content'>
+                              <img id='ChooseElseImg' class='post-composer__body-bottom_button-img' src='images/dots_icon.png' />
+                            </span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class='timeline-posts'>
+
+                <div class='post-body'>
+                  <div class='post-body__options-button'>
+                    <img class='post-body__options-button-img' src='images/options_icon.png'>
+                  </div>
+                  <div class='post-body-content'>
+                    <div class='post-body-content__owner-info'>
+                      <div class='post-body-content__owner-info_owner-picture'>
+                        <img class='post-body-content__owner-info_owner-picture-img' src='images/post owners/real_madrid_icon.png'>
+                      </div>
+                      <div class='post-body-content__owner-text'>
+                        <h5 class='post-body-content__owner-info_owner-name'>
+                          <a class='post-body-content__owner-info_owner-name-wrapper' href="">Real Madrid C.F.</a>
+                        </h5>
+                        <div class='post-body-content__owner-info_posting-time'>
+                          <div class='post-body-content__owner-info_posting-time-text'>34 mins</div>
+                          <div class='post-body-content__owner-info_posting-visibility'>
+                            <img class='post-body-content__owner-info_posting-visibility-img' src='images/visibility_friends_icon.png'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='post-body-content__main-content'>
+                      <div class='post-body-content__main-content_data'>
+                        <div class='post-body-content__main-content_data-wrapper'>
+                          <div class='post-body-content__main-content_data-wrapper-content'>
+                            <img src="images/posts/real_madrid_ronaldo.jpg">
+                          </div>
+                          <div class='post-body-content__main-content_data-wrapper-follow'>
+                            <div class='post-body-content__main-content_data-wrapper-follow-title'>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-main'>
+                                Bla
+                              </div>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-additional'>
+                                Blu
+                              </div>
+                            </div>
+                            <div class='post-body-content__main-content_data-wrapper-follow-button'>
+                              <div class='post-body__main-content_follow-button-wrapper'>
+                                <button class='post-body__main-content_follow-button-body'>
+                                  <span class='post-body__main-content_follow-button-body-content'>
+                                    <img class='post-body__main-content_follow-button-body-img' src='images/follow_icon.png' />
+                                    <span class='post-body__main-content_follow-button-body-text'>Follow</span>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='post-body-content__main-content_data-views-number'>
+                          <div class='post-body-content__main-content_data-views-number-wrapper'>
+                            124,587 Views
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='post-body-bottom'>
+                    <div class='post-body-bottom__likes-info'>
+                      <div class='post-body-bottom__likes-info-wrapper'>
+                        <div class='post-body-bottom__likes-info-wrapper_emotion-icons'>
+                          <div class='post-body-bottom__likes-info-wrapper_emotion-icons-block'>
+                            <img class='post__like-emoji-icon' src='images/like_emoji.png'>
+                            <img class='post__love-emoji-icon' src='images/love_emoji.png'>
+                            <img class='post__laugh-emoji-icon' src='images/laugh_emoji.png'>
+                          </div>
+                          <div class='post-body-bottom__statistics-text'>
+                            15K
+                          </div>
+                        </div>
+                        <div class='post-body-bottom__likes-info-wrapper_post-statistics'>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-share'>
+                            5K Shares
+                          </div>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-comment'>
+                            124 Comments
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='post-body-bottom__action-buttons'>
+                      <div class='post-body-bottom__action-buttons_actions-block'>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/like_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-button-body-text'>Like</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/comment_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Comment</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/share_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Share</span>
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class='post-body-bottom__action-buttons_user-block'>
+                        <div class='post-body-bottom__action-buttons_user-block-wrapper'>
+                          <img class='profile-picture post-body-bottom__action-buttons_user-block-profile-picture' src='images/profile_icon.jpg'>
+                          <img class='post-body-bottom__action-buttons_user-block-triangle-picture' src='images/triangle_gray_icon.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class='post-body'>
+                  <div class='post-body__options-button'>
+                    <img class='post-body__options-button-img' src='images/options_icon.png'>
+                  </div>
+                  <div class='post-body-content'>
+                    <div class='post-body-content__owner-info'>
+                      <div class='post-body-content__owner-info_owner-picture'>
+                        <img class='post-body-content__owner-info_owner-picture-img' src='images/post owners/android_authority_icon.png'>
+                      </div>
+                      <div class='post-body-content__owner-text'>
+                        <h5 class='post-body-content__owner-info_owner-name'>
+                          <a class='post-body-content__owner-info_owner-name-wrapper' href="">Android Authority</a>
+                        </h5>
+                        <div class='post-body-content__owner-info_posting-time'>
+                          <div class='post-body-content__owner-info_posting-time-text'>55 mins</div>
+                          <div class='post-body-content__owner-info_posting-visibility'>
+                            <img class='post-body-content__owner-info_posting-visibility-img' src='images/visibility_world_icon.png'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='post-body-content__main-content'>
+                      <div class='post-body-content__main-content_data'>
+                        <div class='post-body-content__main-content_data-wrapper'>
+                          <div class='post-body-content__main-content_data-wrapper-content'>
+                            <img src='images/posts/android_phones.jpg'>
+                          </div>
+                          <div class='post-body-content__main-content_data-wrapper-follow'>
+                            <div class='post-body-content__main-content_data-wrapper-follow-title'>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-main'>
+                                Bla
+                              </div>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-additional'>
+                                Blu
+                              </div>
+                            </div>
+                            <div class='post-body-content__main-content_data-wrapper-follow-button'>
+                              <div class='post-body__main-content_follow-button-wrapper'>
+                                <button class='post-body__main-content_follow-button-body'>
+                                  <span class='post-body__main-content_follow-button-body-content'>
+                                    <img class='post-body__main-content_follow-button-body-img' src='images/follow_icon.png' />
+                                    <span class='post-body__main-content_follow-button-body-text'>Follow</span>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='post-body-content__main-content_data-views-number'>
+                          <div class='post-body-content__main-content_data-views-number-wrapper'>
+                            124,587 Views
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='post-body-bottom'>
+                    <div class='post-body-bottom__likes-info'>
+                      <div class='post-body-bottom__likes-info-wrapper'>
+                        <div class='post-body-bottom__likes-info-wrapper_emotion-icons'>
+                          <div class='post-body-bottom__likes-info-wrapper_emotion-icons-block'>
+                            <img class='post__like-emoji-icon' src='images/like_emoji.png'>
+                            <img class='post__love-emoji-icon' src='images/love_emoji.png'>
+                            <img class='post__laugh-emoji-icon' src='images/laugh_emoji.png'>
+                          </div>
+                          <div class='post-body-bottom__statistics-text'>
+                            15K
+                          </div>
+                        </div>
+                        <div class='post-body-bottom__likes-info-wrapper_post-statistics'>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-share'>
+                            5K Shares
+                          </div>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-comment'>
+                            124 Comments
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='post-body-bottom__action-buttons'>
+                      <div class='post-body-bottom__action-buttons_actions-block'>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/like_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-button-body-text'>Like</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/comment_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Comment</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/share_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Share</span>
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class='post-body-bottom__action-buttons_user-block'>
+                        <div class='post-body-bottom__action-buttons_user-block-wrapper'>
+                          <img class='profile-picture post-body-bottom__action-buttons_user-block-profile-picture' src='images/profile_icon.jpg'>
+                          <img class='post-body-bottom__action-buttons_user-block-triangle-picture' src='images/triangle_gray_icon.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class='post-body'>
+                  <div class='post-body__options-button'>
+                    <img class='post-body__options-button-img' src='images/options_icon.png'>
+                  </div>
+                  <div class='post-body-content'>
+                    <div class='post-body-content__owner-info'>
+                      <div class='post-body-content__owner-info_owner-picture'>
+                        <img class='post-body-content__owner-info_owner-picture-img' src='images/post owners/real_madrid_icon.png'>
+                      </div>
+                      <div class='post-body-content__owner-text'>
+                        <h5 class='post-body-content__owner-info_owner-name'>
+                          <a class='post-body-content__owner-info_owner-name-wrapper' href="">Real Madrid C.F.</a>
+                        </h5>
+                        <div class='post-body-content__owner-info_posting-time'>
+                          <div class='post-body-content__owner-info_posting-time-text'>34 mins</div>
+                          <div class='post-body-content__owner-info_posting-visibility'>
+                            <img class='post-body-content__owner-info_posting-visibility-img' src='images/visibility_friends_icon.png'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='post-body-content__main-content'>
+                      <div class='post-body-content__main-content_data'>
+                        <div class='post-body-content__main-content_data-wrapper'>
+                          <div class='post-body-content__main-content_data-wrapper-content'>
+
+                          </div>
+                          <div class='post-body-content__main-content_data-wrapper-follow'>
+                            <div class='post-body-content__main-content_data-wrapper-follow-title'>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-main'>
+                                Bla
+                              </div>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-additional'>
+                                Blu
+                              </div>
+                            </div>
+                            <div class='post-body-content__main-content_data-wrapper-follow-button'>
+                              <div class='post-body__main-content_follow-button-wrapper'>
+                                <button class='post-body__main-content_follow-button-body'>
+                                  <span class='post-body__main-content_follow-button-body-content'>
+                                    <img class='post-body__main-content_follow-button-body-img' src='images/follow_icon.png' />
+                                    <span class='post-body__main-content_follow-button-body-text'>Follow</span>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='post-body-content__main-content_data-views-number'>
+                          <div class='post-body-content__main-content_data-views-number-wrapper'>
+                            124,587 Views
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='post-body-bottom'>
+                    <div class='post-body-bottom__likes-info'>
+                      <div class='post-body-bottom__likes-info-wrapper'>
+                        <div class='post-body-bottom__likes-info-wrapper_emotion-icons'>
+                          <div class='post-body-bottom__likes-info-wrapper_emotion-icons-block'>
+                            <img class='post__like-emoji-icon' src='images/like_emoji.png'>
+                            <img class='post__love-emoji-icon' src='images/love_emoji.png'>
+                            <img class='post__laugh-emoji-icon' src='images/laugh_emoji.png'>
+                          </div>
+                          <div class='post-body-bottom__statistics-text'>
+                            15K
+                          </div>
+                        </div>
+                        <div class='post-body-bottom__likes-info-wrapper_post-statistics'>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-share'>
+                            5K Shares
+                          </div>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-comment'>
+                            124 Comments
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='post-body-bottom__action-buttons'>
+                      <div class='post-body-bottom__action-buttons_actions-block'>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/like_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-button-body-text'>Like</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/comment_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Comment</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/share_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Share</span>
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class='post-body-bottom__action-buttons_user-block'>
+                        <div class='post-body-bottom__action-buttons_user-block-wrapper'>
+                          <img class='profile-picture post-body-bottom__action-buttons_user-block-profile-picture' src='images/profile_icon.jpg'>
+                          <img class='post-body-bottom__action-buttons_user-block-triangle-picture' src='images/triangle_gray_icon.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class='post-body'>
+                  <div class='post-body__options-button'>
+                    <img class='post-body__options-button-img' src='images/options_icon.png'>
+                  </div>
+                  <div class='post-body-content'>
+                    <div class='post-body-content__owner-info'>
+                      <div class='post-body-content__owner-info_owner-picture'>
+                        <img class='post-body-content__owner-info_owner-picture-img' src='images/post owners/real_madrid_icon.png'>
+                      </div>
+                      <div class='post-body-content__owner-text'>
+                        <h5 class='post-body-content__owner-info_owner-name'>
+                          <a class='post-body-content__owner-info_owner-name-wrapper' href="">Real Madrid C.F.</a>
+                        </h5>
+                        <div class='post-body-content__owner-info_posting-time'>
+                          <div class='post-body-content__owner-info_posting-time-text'>34 mins</div>
+                          <div class='post-body-content__owner-info_posting-visibility'>
+                            <img class='post-body-content__owner-info_posting-visibility-img' src='images/visibility_friends_icon.png'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='post-body-content__main-content'>
+                      <div class='post-body-content__main-content_data'>
+                        <div class='post-body-content__main-content_data-wrapper'>
+                          <div class='post-body-content__main-content_data-wrapper-content'>
+
+                          </div>
+                          <div class='post-body-content__main-content_data-wrapper-follow'>
+                            <div class='post-body-content__main-content_data-wrapper-follow-title'>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-main'>
+                                Bla
+                              </div>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-additional'>
+                                Blu
+                              </div>
+                            </div>
+                            <div class='post-body-content__main-content_data-wrapper-follow-button'>
+                              <div class='post-body__main-content_follow-button-wrapper'>
+                                <button class='post-body__main-content_follow-button-body'>
+                                  <span class='post-body__main-content_follow-button-body-content'>
+                                    <img class='post-body__main-content_follow-button-body-img' src='images/follow_icon.png' />
+                                    <span class='post-body__main-content_follow-button-body-text'>Follow</span>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='post-body-content__main-content_data-views-number'>
+                          <div class='post-body-content__main-content_data-views-number-wrapper'>
+                            124,587 Views
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='post-body-bottom'>
+                    <div class='post-body-bottom__likes-info'>
+                      <div class='post-body-bottom__likes-info-wrapper'>
+                        <div class='post-body-bottom__likes-info-wrapper_emotion-icons'>
+                          <div class='post-body-bottom__likes-info-wrapper_emotion-icons-block'>
+                            <img class='post__like-emoji-icon' src='images/like_emoji.png'>
+                            <img class='post__love-emoji-icon' src='images/love_emoji.png'>
+                            <img class='post__laugh-emoji-icon' src='images/laugh_emoji.png'>
+                          </div>
+                          <div class='post-body-bottom__statistics-text'>
+                            15K
+                          </div>
+                        </div>
+                        <div class='post-body-bottom__likes-info-wrapper_post-statistics'>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-share'>
+                            5K Shares
+                          </div>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-comment'>
+                            124 Comments
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='post-body-bottom__action-buttons'>
+                      <div class='post-body-bottom__action-buttons_actions-block'>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/like_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-button-body-text'>Like</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/comment_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Comment</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/share_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Share</span>
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class='post-body-bottom__action-buttons_user-block'>
+                        <div class='post-body-bottom__action-buttons_user-block-wrapper'>
+                          <img class='profile-picture post-body-bottom__action-buttons_user-block-profile-picture' src='images/profile_icon.jpg'>
+                          <img class='post-body-bottom__action-buttons_user-block-triangle-picture' src='images/triangle_gray_icon.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class='post-body'>
+                  <div class='post-body__options-button'>
+                    <img class='post-body__options-button-img' src='images/options_icon.png'>
+                  </div>
+                  <div class='post-body-content'>
+                    <div class='post-body-content__owner-info'>
+                      <div class='post-body-content__owner-info_owner-picture'>
+                        <img class='post-body-content__owner-info_owner-picture-img' src='images/post owners/real_madrid_icon.png'>
+                      </div>
+                      <div class='post-body-content__owner-text'>
+                        <h5 class='post-body-content__owner-info_owner-name'>
+                          <a class='post-body-content__owner-info_owner-name-wrapper' href="">Real Madrid C.F.</a>
+                        </h5>
+                        <div class='post-body-content__owner-info_posting-time'>
+                          <div class='post-body-content__owner-info_posting-time-text'>34 mins</div>
+                          <div class='post-body-content__owner-info_posting-visibility'>
+                            <img class='post-body-content__owner-info_posting-visibility-img' src='images/visibility_friends_icon.png'>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='post-body-content__main-content'>
+                      <div class='post-body-content__main-content_data'>
+                        <div class='post-body-content__main-content_data-wrapper'>
+                          <div class='post-body-content__main-content_data-wrapper-content'>
+
+                          </div>
+                          <div class='post-body-content__main-content_data-wrapper-follow'>
+                            <div class='post-body-content__main-content_data-wrapper-follow-title'>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-main'>
+                                Bla
+                              </div>
+                              <div class='post-body-content__main-content_data-wrapper-follow-title-additional'>
+                                Blu
+                              </div>
+                            </div>
+                            <div class='post-body-content__main-content_data-wrapper-follow-button'>
+                              <div class='post-body__main-content_follow-button-wrapper'>
+                                <button class='post-body__main-content_follow-button-body'>
+                                  <span class='post-body__main-content_follow-button-body-content'>
+                                    <img class='post-body__main-content_follow-button-body-img' src='images/follow_icon.png' />
+                                    <span class='post-body__main-content_follow-button-body-text'>Follow</span>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='post-body-content__main-content_data-views-number'>
+                          <div class='post-body-content__main-content_data-views-number-wrapper'>
+                            124,587 Views
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='post-body-bottom'>
+                    <div class='post-body-bottom__likes-info'>
+                      <div class='post-body-bottom__likes-info-wrapper'>
+                        <div class='post-body-bottom__likes-info-wrapper_emotion-icons'>
+                          <div class='post-body-bottom__likes-info-wrapper_emotion-icons-block'>
+                            <img class='post__like-emoji-icon' src='images/like_emoji.png'>
+                            <img class='post__love-emoji-icon' src='images/love_emoji.png'>
+                            <img class='post__laugh-emoji-icon' src='images/laugh_emoji.png'>
+                          </div>
+                          <div class='post-body-bottom__statistics-text'>
+                            15K
+                          </div>
+                        </div>
+                        <div class='post-body-bottom__likes-info-wrapper_post-statistics'>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-share'>
+                            5K Shares
+                          </div>
+                          <div class='post-body-bottom__statistics-text post-body-bottom__likes-info-wrapper_post-statistics-comment'>
+                            124 Comments
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='post-body-bottom__action-buttons'>
+                      <div class='post-body-bottom__action-buttons_actions-block'>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/like_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-button-body-text'>Like</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/comment_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Comment</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class='post-body-bottom__action-buttons_actions-block-wrapper'>
+                          <button class='post-body-bottom__action-buttons_actions-block-button-body'>
+                            <span class='post-body-bottom__action-buttons_actions-block-button-body-content'>
+                              <img class='post-body-bottom__action-buttons_actions-block-button-body-img' src='images/share_action_icon.png' />
+                              <span class='post-body-bottom__action-buttons_actions-block-text'>Share</span>
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class='post-body-bottom__action-buttons_user-block'>
+                        <div class='post-body-bottom__action-buttons_user-block-wrapper'>
+                          <img class='profile-picture post-body-bottom__action-buttons_user-block-profile-picture' src='images/profile_icon.jpg'>
+                          <img class='post-body-bottom__action-buttons_user-block-triangle-picture' src='images/triangle_gray_icon.png'>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
             <div class="commercials">
@@ -294,6 +892,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="scripts.js"></script>  
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
