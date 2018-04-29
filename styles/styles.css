@@ -153,6 +153,7 @@ html, body{
 }
 
 .profile-name{
+	text-transform: capitalize;
 	font-size: 16px;
 	display: inline;
 	color: white;
@@ -165,6 +166,7 @@ html, body{
 	box-sizing: border-box;
 	margin: 0 auto;
 	padding-left: 5px; 
+	text-transform: capitalize;
   font-size: 12px;
 	font-weight: bold;
 	text-align: center;		
@@ -300,11 +302,13 @@ html, body{
 	margin: 0;
 	padding-left: 5px;
 	line-height: 28px;	
+	text-transform: capitalize;
 	font-size: 13px;
 }
 
 .side-menu-wrapper a{
 	color: black;
+	text-transform: capitalize;
 	font-size: 13px;
 }
 
@@ -331,10 +335,9 @@ html, body{
 }
 
 .page-chat{
-	top: 43px;
-	height: 100%;
+	top: 42px;
+	height: calc( 100% - 42px);
 	width: 206px;
-	background: red;
 	display: block;
 	position: fixed !important;
 	right: 0;
@@ -403,6 +406,7 @@ html, body{
 	height: 16px;
 	border-radius: 2px 2px 0 0;
 	font-weight: bold;
+	text-transform: capitalize;
 	font-size: 14px;
 	background-color: #f6f7f9;
 	border-bottom: 1px solid #dddfe2;
@@ -557,6 +561,7 @@ html, body{
   text-overflow: ellipsis;
   vertical-align: middle;
   white-space: nowrap;
+	text-transform: capitalize;
 	font-size: 12px; 
 }
 
@@ -654,6 +659,7 @@ html, body{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: normal;
+	text-transform: capitalize;
   font-size: 14px;
   font-weight: bold;
 }
@@ -667,6 +673,7 @@ html, body{
 	text-overflow: ellipsis;
 	white-space: normal;
 	color: #90949c;
+	text-transform: capitalize;
 	font-size: 12px;
 }
 
@@ -726,6 +733,7 @@ html, body{
   text-overflow: ellipsis;
   vertical-align: middle;
   white-space: nowrap;
+	text-transform: capitalize;
 	font-size: 12px; 
 }
 
@@ -740,6 +748,7 @@ html, body{
 .post-body-content__main-content_data-views-number-wrapper{
 	display: block;
 	position: relative;
+	text-transform: capitalize;
 	font-size: 12px;
 	color: #90949c;
 }
@@ -778,6 +787,7 @@ html, body{
 }
 
 .post-body-content__owner-info_owner-name-wrapper{
+	text-transform: capitalize;
 	font-size: 14px;
 	font-weight: 600;
 	color: #365899;
@@ -862,6 +872,7 @@ html, body{
 	position: relative;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	text-transform: capitalize;
 	font-size: 14px;
 	color: #90949c;
 	margin: 2px 1px;
@@ -995,6 +1006,7 @@ html, body{
   vertical-align: middle;
   white-space: nowrap;
 	color: #616770;
+	text-transform: capitalize;
   font-size: 13px; 
 }
 
@@ -1071,6 +1083,7 @@ html, body{
 	position: relative;
 	width: calc( 100% - 20px );
 	height: 100%;
+	text-transform: capitalize;
 	font-size: 13px;
 	font-weight: 600;
 	color: #6a7078;
@@ -1145,6 +1158,7 @@ html, body{
 	color: #365899;
   font-weight: 600;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 16px;
 	overflow: hidden;
@@ -1161,6 +1175,7 @@ html, body{
 	color: #90949c;
 	font-weight: normal;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 16px;
 	overflow: hidden;
@@ -1196,6 +1211,7 @@ html, body{
 	color: #365899;
 	cursor: pointer;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 12px;
 	line-height: 15px;
 	overflow: hidden;
@@ -1284,6 +1300,7 @@ html, body{
 	position: relative;
 	width: calc( 100% - 12px - 8px );
 	height: 15px;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: bold;
@@ -1338,6 +1355,7 @@ html, body{
 	color: #365899;
   font-weight: 600;
 	text-align: left;
+	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 16px;
 	overflow: hidden;
@@ -1380,6 +1398,7 @@ html, body{
 	position: relative;
 	width: calc( 100% - 42px - 8px );
 	height: 15px;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: bold;
@@ -1396,6 +1415,7 @@ html, body{
 	position: relative;
 	width: auto;
 	height: 15px;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: normal;
@@ -1447,6 +1467,7 @@ html, body{
 	color: #365899;
   font-weight: 600;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 16px;
 	overflow: hidden;
@@ -1463,6 +1484,7 @@ html, body{
 	color: #90949c;
 	font-weight: normal;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 16px;
 	overflow: hidden;
@@ -1518,6 +1540,7 @@ html, body{
   text-overflow: ellipsis;
   vertical-align: middle;
   white-space: nowrap;
+	text-transform: capitalize;
 	font-size: 12px; 
 }
 
@@ -1543,6 +1566,7 @@ html, body{
 	position: relative;
 	width: calc( 100% - 42px - 8px );
 	height: 15px;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: bold;
@@ -1559,6 +1583,7 @@ html, body{
 	position: relative;
 	width: auto;
 	height: 15px;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: normal;
@@ -1589,6 +1614,7 @@ html, body{
 .commercials-wrapper__suggested-pages_body-comment-username{
 	top: 1px;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	overflow: hidden;
@@ -1600,6 +1626,7 @@ html, body{
 
 .commercials-wrapper__suggested-pages_body-comment-text{
 	text-align: left;
+	text-transform: lowercase;
 	font-size: 13px;
 	line-height: 15px;
 	overflow: hidden;
@@ -1643,6 +1670,7 @@ html, body{
 	display: block;
 	position: relative;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 21px;
 	overflow: hidden;
@@ -1656,6 +1684,7 @@ html, body{
 	display: block;
 	position: relative;
 	text-align: left;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 18px;
 	overflow: hidden;
@@ -1711,6 +1740,7 @@ html, body{
 	position: relative;
 	padding-left: 5px;
 	height: 15px;
+	text-transform: capitalize;
 	font-size: 13px;
 	line-height: 15px;
 	font-weight: 600;
@@ -1785,6 +1815,7 @@ html, body{
   text-overflow: ellipsis;
   vertical-align: middle;
   white-space: nowrap;
+	text-transform: capitalize;
 	font-size: 12px; 
   color: #365899;
 }
@@ -1819,6 +1850,7 @@ html, body{
   text-overflow: ellipsis;
   vertical-align: middle;
   white-space: nowrap;
+	text-transform: capitalize;
 	font-size: 12px; 
   color: #90949c;
 }
@@ -1850,11 +1882,264 @@ html, body{
   text-overflow: ellipsis;
   vertical-align: middle;
   white-space: nowrap;
+	text-transform: capitalize;
 	font-size: 13px; 
   color: #616770;
 }
 
+.page-chat-wrapper{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-left: 1px solid rgba(0, 0, 0, .1);	
+}
 
+.page-chat-wrapper__games{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 171px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);	
+}
+
+.page-chat-wrapper__games-wrapper{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 85px;
+}
+
+.page-chat-wrapper__games-wrapper_header{
+	display: block;
+	position: relative;
+	width: calc( 100% - 6px - 6px );
+	height: 13px;
+	padding: 6px;
+	text-transform: uppercase;
+}
+
+.page-chat-wrapper__games-wrapper_header-label{
+	float: left;
+	display: block;
+	position: relative;
+	padding-top: 1px;
+	line-height: 12px;
+	box-sizing: border-box;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	font-size: 11px; 
+  color: #989db3;
+}
+
+.page-chat-wrapper__games-wrapper_header-more{
+	float: right;
+	display: block;
+	position: relative;
+	padding-top: 2px;
+	line-height: 12px;
+	box-sizing: border-box;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	font-size: 9px; 
+  color: #989db3;
+}
+
+.page-chat-wrapper__games-wrapper_body{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 54px;
+}
+
+.page-chat-wrapper__games-wrapper_body-arrow{
+	float: left;
+	display: block;
+	position: relative;
+	width: 8px;
+	height: 12px;
+	padding: 21px 6px;
+}
+
+.page-chat-wrapper__left-arrow{
+	padding-right: 0;
+}
+
+.page-chat-wrapper__right-arrow{
+	padding-left: 0;
+}
+
+.page-chat-wrapper__games-wrapper_body-content{
+	float: left;
+	display: block;
+	position: relative;
+	width: calc( 100% - 8px - 6px - 8px - 6px );
+	height: 100%;
+}
+
+.page-chat-wrapper__games-wrapper_body-content-elem{
+	float: left;
+	display: block;
+	position: relative;
+	width: calc( 100%  / 3 );
+	height: 100%;
+}
+
+.page-chat-wrapper__games-wrapper_body-content-elem img{
+	border-radius: 50%;
+}
+
+.page-chat-wrapper__games-wrapper_body-content-elem-picture{
+	display: block;
+	position: relative;
+	width: 54px;
+	height: 54px;
+	margin: 0 auto;
+}
+
+.page-chat-wrapper__games-wrapper_body-middle-border{
+	display: block;
+	position: relative;
+	width: calc( 100% - 8px - 8px );
+	border-bottom: 1px solid rgba(0, 0, 0, .1);		
+}
+
+.page-chat-wrapper__chats{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.page-chat-wrapper__chat-elem-type{
+	display: block;
+	position: relative;
+	width: 206px;
+	padding-top: 12px;
+}
+
+.page-chat-wrapper__chat-elem-type_label{
+	display: block;
+	position: relative;
+	padding: 8px;
+	line-height: 12px;
+	box-sizing: border-box;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	text-transform: uppercase;
+	font-size: 11px; 
+  color: #4c4c4c;
+}
+
+.page-chat-wrapper__chat-elem_body{
+	display: block;
+	position: relative;
+	width: calc( 100% - 8px );
+	height: 32px;
+	padding: 4px 0 4px 8px;
+}
+
+.page-chat-wrapper__chat-elem_body-photo{
+	float: left;
+	display: block;
+	position: relative;
+	width: 32px;
+	height: 32px;
+}
+
+.page-chat-wrapper__chat-elem_body-photo img{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+.page-chat-wrapper__chat-elem_body-name{
+	float: left;
+	display: block;
+	position: relative;
+	width: 135px;
+	height: 32px;
+	padding-left: 8px;
+	line-height: 32px;
+	box-sizing: border-box;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	font-size: 12px; 
+  color: #333333;
+}
+
+.page-chat-wrapper__chat-elem_body-notification{
+	float: left;
+	display: block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	padding: 8px 7px;
+}
+
+.page-chat-wrapper__chats-pages_body-notification-pages{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, .15);		
+	background-color: white;
+	box-sizing: border-box;
+	line-height: 13px;
+  font-weight: normal;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+  white-space: nowrap;
+	font-size: 10px; 
+  color: #4b4f56;
+}
+
+.page-chat-wrapper__chats-pages_body-notification-friend-online{
+	display: block;
+	position: relative;
+	width: 6px;
+	height: 6px;
+	margin: 5px;
+	border-radius: 50%;
+	background-color: green;
+}
+
+.page-chat-wrapper__chats-pages_body-notification-friend-offline{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	line-height: 12px;
+	margin-left: -8px;
+  font-weight: normal;
+  overflow: hidden;
+	text-align: center;
+  white-space: nowrap;
+	font-size: 11px; 
+	color: #90949c;
+}
+
+
+
+
+.page-chat-wrapper__search-bar{
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: white;
+}
 
 @media screen and (max-width: 1238px){
 	.page-chat{
